@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="indexStyle.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>jacobcampbell.ca</title>
+  
+  </head>
+  
+  <body>
+    
+    <div class="scene"></div>
+    <script src="three.min.js"></script>
+    <script src="GLTFLoader.js"></script>
+    <script src = "background.js"></script>
+
+    <div class="rocketShip">
+      <img src="photos/rocket ship to space - edited.png">
+  </div>
+
+
+
+  <div class="buttonContainer">  
+    <img class="title" src="photos/logo.png">
+  
+    <div class="shopButton">
+      <input type="button" class="shopButton" value="SHOP" onclick="goToShop()" 
+        style="background-color: #B3210D; border: 4px solid #B3210D; border-radius: 15px; text-align: center;">
+    </input>
+    </div>
+  
+    <div class="musicButton">
+        <input type="button" class="musicButton" value="MUSIC" onclick="location.href='music.html'" \
+        
+        style="background-color: #B3210D; border: 4px solid #B3210D; border-radius: 15px"/>
+    </div>
+  
+  
+  
+    <div class="mediaButton">
+        <input type="button" class="mediaButton" value="MEDIA" onclick="location.href ='media.html'"
+        
+        style="background-color: #B3210D; border: 4px solid #B3210D; border-radius: 15px"/>
+    </div>
+  
+    <div class="cartButton">
+        <input type="button" class="cartButton" value="CART" onclick="location.href ='cart.html'" 
+        
+        style="background-color: #B3210D; border: 4px solid #B3210D; border-radius: 15px"/>
+    </div>
+  
+    <div class="contactButton">
+        <input type="button" class="contactButton" value="CONTACT ME" onclick="location.href = 'contactMe.html'"
+        style="background-color: #B3210D; border: 4px solid #B3210D; border-radius: 15px"/>
+    </div>
+  </div>
+
+
+
+
+  
+
+    <script>
+      function goToShop() {
+        var thisLocation = location.hostname
+        $(document).ready(function() {
+          $.ajax({
+            type: "GET",
+            url: "http://"+thisLocation+":8000/shop",
+            success: function(response) {
+              location.href = 'http://'+thisLocation+':8000/shop';
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+               console.log(errorThrown)
+            },
+        })
+
+      });
+      }
+      
+
+    </script>
+  </body>
+</html>
+

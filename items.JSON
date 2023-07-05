@@ -1,0 +1,20 @@
+{
+    "watches": [
+        {
+            "id": 1,
+            "manufacturer": "Patek Phillipe",
+            "model": "Nautilus",
+            "price": 1600000,
+            "imgName": "photos/Patek Phillipe.jpeg",
+            "top": 45
+        },
+        {
+            "id": 2,
+            "manufacturer": "Cartier",
+            "model": "Grand Tourbillon",
+            "price": 6244900,
+            "imgName": "photos/Cartier.jpeg",
+            "top": 105
+        }
+    ]     
+}

@@ -1,0 +1,200 @@
+body {
+    cursor: crosshair;
+}
+
+.rocketShip {
+    position: fixed;
+    top: 80%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    animation: launch 2.5s linear;
+    cursor: crosshair;
+ 
+}
+
+@keyframes launch {
+    0% {
+        position: fixed;
+        top: 200%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+    }
+
+    25% {
+        position: fixed;
+        top: 170%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+    }
+
+    50% {
+        position: fixed;
+        top: 140%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+    }
+
+    75% {
+        position: fixed;
+        top: 110%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+    }
+
+    100% {
+        position: fixed;
+        top: 80%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.buttonContainer {
+    height: 90%;
+    width: 80%;
+    background-color: rgb(255, 165, 0, 0.5);
+    border-radius: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    cursor: crosshair;
+    max-width: 450px;
+}
+
+.title {
+    position: fixed;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #B3210D;
+    padding: 9px;
+    border-radius: 15px;
+
+
+    width: 90%;
+    height: 20%;
+    opacity: 0.93;
+    cursor: crosshair;
+}
+
+
+
+.button {
+    color: #000000;
+    border: 4px solid #B3210D;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    cursor: crosshair;
+    
+}
+
+    .button:hover {
+        box-shadow: 1px 1px #B3210D, 2px 2px #B3210D, 3px 3px #B3210D, 4px 4px #B3210D, 5px 5px #B3210D;
+    }
+
+/*.panel {
+    background-color: #B3210D;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-family: border 4px solid #B3210D;
+    font-size: 18px;
+    width: 214px;
+    position: fixed;
+    top: 78%;
+    left: 43.25%;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    z-index: auto, -1;
+}*/
+
+.shopButton {
+    color: #fedb53;
+    position: fixed;
+    top: 25%;
+    left: 5%;
+
+    width: 90%;
+    height: 12.5%;
+    font-family: 'Courier New', monospace;
+    font-size: 30px;
+    font-weight: bold;
+
+    opacity: 0.93;
+    cursor: crosshair;
+
+}
+
+
+.musicButton {
+    color: #fedb53;
+    position: fixed;
+    top: 40%;
+    left: 5%;
+    
+    width: 90%;
+    height: 12.5%;
+
+    font-family: 'Courier New', monospace;
+    font-size: 30px;
+    font-weight: bold;
+
+    opacity: 0.93;
+    cursor: crosshair;
+
+}
+
+.mediaButton {
+    color: #fedb53;
+    position: fixed;
+    top: 55%;
+    left: 5%;
+
+
+    width: 90%;
+    height: 12.5%;
+    font-family: 'Courier New', monospace;
+    font-size: 30px;
+    font-weight: bold;
+
+    cursor: crosshair;
+    opacity: 0.93;
+    
+}
+
+.cartButton {
+    color: #fedb53;
+    position: fixed;
+    top: 70%;
+    left: 5%;
+
+    width: 90%;
+    height: 12.5%;
+    font-family: 'Courier New', monospace;
+    font-size: 30px;
+    font-weight: bold;
+
+    opacity: 0.93;
+    cursor: crosshair;
+}
+
+.contactButton {
+    color: #fedb53;
+    position: fixed;
+    top: 85%;
+    left: 5%;
+
+    width: 90%;
+    height: 12.5%;
+    font-family: 'Courier New', monospace;
+    font-size: 30px;
+    font-weight: bold;
+
+    opacity: 0.93;
+    cursor: crosshair;
+}
